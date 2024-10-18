@@ -40,7 +40,7 @@
             background-color: #007acc;
         }
 		 }
-        .form-container {
+        .UTF-8 {
             background-color: white;
             border-radius: 15px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -50,7 +50,7 @@
             margin: 100px auto;
             text-align: center;
         }
-        .form-section input {
+        .UTF-8 {
             width: 20%;
             padding: 10px;
             margin: 10px 0;
@@ -61,11 +61,7 @@
     </style>
 </head>
 <body>
-    <div class="login-form">
-        <h2>Enter Email to Access Robot</h2>
-        <input type="email" id="email" placeholder="Enter your email" required>
-        <button onclick="login()">Access</button>
-    </div>
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -89,16 +85,6 @@
     <input type="text" id="licenseKey" placeholder="Enter your license key">
     <button onclick="validateLicenseKey()">Submit</button>
 </body>
-    <script>
-        function login() {
-            const email = document.getElementById('email').value;
-            if (email) {
-                localStorage.setItem('userEmail', email);
-                window.location.href = 'loading.html';
-            } else {
-                alert('Please enter a valid email.');
-            }
-        }
-    </script>
+    
 </body>
 </html>
