@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotes - Blue-Mode Pro</title>
+    <style>
+        body {
+            background-color: #00bfff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .content {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+        .input-group {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .input-group li {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #00bfff;
+            color: white;
+            border-radius: 5px;
+        }
+		.footer {
+            display: flex;
+            justify-content: space-around;
+            background-color: #007acc;
+            color: white;
+            padding: 15px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+		.footer {
+            display: flex;
+            justify-content: space-around;
+            background-color: #007acc;
+            color: white;
+            padding: 15px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h2>Trading Symbols</h2>
+        <!-- Trade Information -->
+            <div class="input-group">
+                <label for="symbol"><i class="fas fa-chart-line"></i> Trading Symbol:</label>
+                <input type="text" id="symbol" name="symbol" placeholder="e.g., BTCUSD" required>
+            </div>
+
+         <div class="input-group">
+                <label for="trade-action"><i class="fas fa-exchange-alt"></i>   Trade Action:</label>
+                
+                <input type="text" id="symbol" name="symbol" placeholder="SELL /BUY/ BOTH" required>
+                
+            </div>
+
+           <center> <button type="submit" class="submit-btn"><i class="fas fa-paper-plane"></i> Submit Trade</button> </center>
+        </form>
+<div class="footer">
+        <div><a href="Home.html">Home</a></div>
+        <div><a href="metatrader_login.html">MetaTrader</a></div>
+    </div
+        <div id="response" class="response-box"></div>
+    </section> </center>
+    </div>
+</body>
+</html>

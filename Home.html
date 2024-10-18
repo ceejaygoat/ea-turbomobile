@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue-Mode Pro</title>
+    <style>
+        body {
+            background-color: black;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            text-align: center;
+            color: #000;
+            padding: 20px;
+            font-size: 24px;
+            text-transform: uppercase;
+        }
+
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 70vh;
+        }
+
+        .robot-image {
+            width: 300px;
+            height: auto;
+        }
+
+        .card {
+            background-color: #00bfff;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            width: 80%;
+            max-width: 400px;
+            margin: auto;
+        }
+
+        .title {
+		    color:white;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .button {
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #007acc;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-around;
+            background-color: #007acc;
+            color: white;
+            padding: 15px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">Fully Automated</div>
+
+    <div class="content">
+        <div class="card">
+            <img src="Unknown 7.bmp" alt="Trading Robot" class="robot-image">
+            <h5> You are trading with </h5>
+			<div class="title">Blue-Mode Pro</div>
+			<h3 id="mentorName"><i><font face="serif" color="white">~Ceejay Da goat</i></h3>
+
+             <div class="buttons">
+                <button class="button" id="startStopBtn" onclick="toggleStartStop()">START</button>
+                <button class="button" onclick="window.location.href='quotes.html'">SYMBOLS</button>
+                <button class="button" onclick="window.location.href='metatrader_login.html'">MetaTrader</button>
+            </div>
+        </div>
+ 
+    </main>
+   </div>
+
+
+    <script>
+        let isRunning = false;
+        function toggleStartStop() {
+            const btn = document.getElementById('startStopBtn');
+            isRunning = !isRunning;
+            btn.textContent = isRunning ? 'STOP' : 'START';
+        }
+		</script>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div><a href="Home.html"><span class="icon-home">Home</a></span></div>
+        <div><a href="metatrader_login.html">MetaTrader</a></div>
+    </div>
+</body>
+</html>

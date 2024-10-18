@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MetaTrader Login</title>
+    <style>
+        body {
+            background-color: #00bfff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .login-form {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 80%;
+            max-width: 400px;
+            margin: 50px auto;
+            text-align: center;
+        }
+        .login-form input {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+        .login-form button {
+            background-color: #00bfff;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-form">
+        <h2>MetaTrader 5 Login</h2>
+        <input type="text" id="broker" placeholder="Broker Name" required>
+        <input type="text" id="server" placeholder="Server" required>
+        <input type="text" id="accountNumber" placeholder="Account Number" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <button onclick="saveDetails()">Save & Login</button>
+    </div>
+	<div class="login-form">
+        <h2>MetaTrader 4 Login</h2>
+        <input type="text" id="broker" placeholder="Broker Name" required>
+        <input type="text" id="server" placeholder="Server" required>
+        <input type="text" id="accountNumber" placeholder="Account Number" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <button onclick="saveDetails()">Save & Login</button>
+    </div>
+<div class="footer">
+        <div><a href="Home.html">Home</a></div>
+        <div><a href="metatrader_login.html">MetaTrader</a></div>
+    </div>
+    <script>
+        function saveDetails() {
+            const broker = document.getElementById('broker').value;
+            const server = document.getElementById('server').value;
+            const accountNumber = document.getElementById('accountNumber').value;
+            const
+ 
