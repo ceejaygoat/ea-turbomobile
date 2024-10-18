@@ -66,14 +66,29 @@
         <input type="email" id="email" placeholder="Enter your email" required>
         <button onclick="login()">Access</button>
     </div>
-<center> <section class="form-section">
-        <h2>License Key</h2>
-        <form id="license-form" class="form-container">
-            <!-- License Key Input -->
-            <div class="input-group">
-                <label for="license-key"><i class="fas fa-key"></i> License Key:</label>
-                <input type="text" id="license-key" name="license-key" placeholder="Enter your license key" required>
-            </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>License Key Validation</title>
+    <script>
+        function validateLicenseKey() {
+            const licenseKey = document.getElementById("licenseKey").value;
+            const validKey = "B4R-1O9-561-BB4"; // Define your valid license key here
+
+            if (licenseKey === validKey) {
+                // Redirect to the next page
+                window.location.href = "loading.html"; // Replace with your next page URL
+            } else {
+                alert("Invalid license key! Please try again.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Enter License Key</h1>
+    <input type="text" id="licenseKey" placeholder="Enter your license key">
+    <button onclick="validateLicenseKey()">Submit</button>
+</body>
     <script>
         function login() {
             const email = document.getElementById('email').value;
